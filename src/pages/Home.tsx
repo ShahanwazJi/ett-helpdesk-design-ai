@@ -1,21 +1,37 @@
 
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { TicketIcon, SearchIcon } from 'lucide-react';
 import Layout from '../components/layout/Layout';
 import { Button } from '@/components/ui/button';
 
 const Home = () => {
+  const [scrollPosition, setScrollPosition] = useState(0);
+
+  const handleScroll = () => {
+    const position = window.scrollY;
+    setScrollPosition(position);
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
     <Layout>
       <section className="relative py-16 bg-gradient-to-br from-blue-50 to-white overflow-hidden">
-        {/* Background Image */}
+        {/* Background Image with Parallax Effect */}
         <div 
-          className="absolute inset-0 z-0 opacity-10"
+          className="absolute inset-0 z-0 opacity-10 transition-transform duration-300"
           style={{
             backgroundImage: "url('https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80')",
             backgroundSize: 'cover',
-            backgroundPosition: 'center'
+            backgroundPosition: 'center',
+            transform: `translateY(${scrollPosition * 0.2}px)`
           }}
         ></div>
         
