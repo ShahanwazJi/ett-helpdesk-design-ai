@@ -23,17 +23,19 @@ const Home = () => {
 
   return (
     <Layout>
-      <section className="relative py-16 bg-gradient-to-br from-blue-50 to-white overflow-hidden">
+      <section className="relative py-16 bg-gradient-to-br from-neutral-100 to-white overflow-hidden">
         {/* Background Image with Parallax Effect */}
         <div 
-          className="absolute inset-0 z-0 opacity-10 transition-transform duration-300"
+          className="absolute inset-0 z-0 opacity-25 transition-transform duration-300"
           style={{
-            backgroundImage: "url('https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80')",
+            backgroundImage: "url('https://images.unsplash.com/photo-1605810230434-7631ac76ec81?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80')",
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             transform: `translateY(${scrollPosition * 0.2}px)`
           }}
         ></div>
+        {/* Dark overlay to increase contrast with text */}
+        <div className="absolute inset-0 z-0 bg-black opacity-10"></div>
         
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-3xl mx-auto text-center">
