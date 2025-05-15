@@ -8,8 +8,18 @@ import { Button } from '@/components/ui/button';
 const Home = () => {
   return (
     <Layout>
-      <section className="bg-gradient-to-br from-blue-50 to-white py-16">
-        <div className="container mx-auto px-4">
+      <section className="relative py-16 bg-gradient-to-br from-blue-50 to-white overflow-hidden">
+        {/* Background Image */}
+        <div 
+          className="absolute inset-0 z-0 opacity-10"
+          style={{
+            backgroundImage: "url('https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80')",
+            backgroundSize: 'cover',
+            backgroundPosition: 'center'
+          }}
+        ></div>
+        
+        <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl font-bold text-neutral-800 mb-4">Welcome to eTT Helpdesk System</h1>
             <p className="text-lg text-neutral-600 mb-8">
