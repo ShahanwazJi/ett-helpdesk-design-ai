@@ -23,24 +23,24 @@ const Home = () => {
 
   return (
     <Layout>
-      <section className="relative py-16 bg-gradient-to-br from-neutral-100 to-white overflow-hidden">
+      <section className="relative py-16 bg-gradient-to-br from-neutral-800 to-neutral-900 overflow-hidden">
         {/* Background Image with Parallax Effect */}
         <div 
-          className="absolute inset-0 z-0 opacity-25 transition-transform duration-300"
+          className="absolute inset-0 z-0 opacity-20 transition-transform duration-300"
           style={{
-            backgroundImage: "url('https://images.unsplash.com/photo-1605810230434-7631ac76ec81?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80')",
+            backgroundImage: "url('https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-1.2.1&auto=format&fit=crop&w=2000&q=80')",
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             transform: `translateY(${scrollPosition * 0.2}px)`
           }}
         ></div>
         {/* Dark overlay to increase contrast with text */}
-        <div className="absolute inset-0 z-0 bg-black opacity-10"></div>
+        <div className="absolute inset-0 z-0 bg-black opacity-30"></div>
         
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-4xl font-bold text-neutral-800 mb-4">Welcome to eTT Helpdesk System</h1>
-            <p className="text-lg text-neutral-600 mb-8">
+            <h1 className="text-4xl font-bold text-white mb-4">Welcome to eTT Helpdesk System</h1>
+            <p className="text-lg text-neutral-100 mb-8">
               A streamlined support portal for the Department of Telecommunications to assist with your inquiries and issues.
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
