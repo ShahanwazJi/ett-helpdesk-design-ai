@@ -43,9 +43,6 @@ const Home = () => {
             <p className="text-lg text-neutral-100 mb-8">
               A streamlined support portal to resolve your queries and issues efficiently.
             </p>
-            <p className="text-neutral-200 mb-8">
-              Need help? We're here to assist with all your service and technical queries.
-            </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
               <Link to="/new-ticket">
                 <Button className="bg-primary hover:bg-primary-hover text-white px-8 py-6 text-base flex items-center space-x-2">
@@ -88,6 +85,12 @@ const Home = () => {
                   Access our knowledge base for solutions to common telecommunications problems.
                 </p>
               </div>
+            </div>
+            
+            <div className="text-center mt-12 mb-4">
+              <p className="text-lg font-medium bg-neutral-100 inline-block px-8 py-4 rounded-lg text-primary border-l-4 border-primary shadow-sm">
+                Need help? We're here to assist with all your service and technical queries.
+              </p>
             </div>
           </div>
         </div>

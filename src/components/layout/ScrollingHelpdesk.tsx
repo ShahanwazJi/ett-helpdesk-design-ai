@@ -15,6 +15,8 @@ const ScrollingHelpdesk = () => {
               <span>011 23350020, 011 23350025</span>
               <span className="mx-3 text-neutral-400">|</span>
               <span className="text-neutral-300">(Mon-Fri, Timing: 0930-1730 Hrs)</span>
+              <span className="mx-3 text-neutral-400">|</span>
+              <span className="text-neutral-300">All working Days, except Central Government Holidays</span>
               <span className="mx-10"></span>
               {/* Duplicate content for continuous scrolling effect */}
               <PhoneCall className="h-4 w-4 mr-2 text-secondary" />
@@ -22,6 +24,8 @@ const ScrollingHelpdesk = () => {
               <span>011 23350020, 011 23350025</span>
               <span className="mx-3 text-neutral-400">|</span>
               <span className="text-neutral-300">(Mon-Fri, Timing: 0930-1730 Hrs)</span>
+              <span className="mx-3 text-neutral-400">|</span>
+              <span className="text-neutral-300">All working Days, except Central Government Holidays</span>
               <span className="mx-10"></span>
             </div>
           </div>
