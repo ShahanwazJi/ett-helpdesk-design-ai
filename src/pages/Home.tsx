@@ -41,7 +41,10 @@ const Home = () => {
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl font-bold text-white mb-4">Welcome to eTT Helpdesk System</h1>
             <p className="text-lg text-neutral-100 mb-8">
-              A streamlined support portal for the Department of Telecommunications to assist with your inquiries and issues.
+              A streamlined support portal to resolve your queries and issues efficiently.
+            </p>
+            <p className="text-neutral-200 mb-8">
+              Need help? We're here to assist with all your service and technical queries.
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
               <Link to="/new-ticket">
